@@ -14,7 +14,13 @@ public AudioSource musicSource;
     // Start is called before the first frame update
     void Start()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+    
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+       if (Input.GetKeyDown(KeyCode.W))
         {
           musicSource.clip = musicClipOne;
           musicSource.Play();
@@ -46,12 +52,6 @@ public AudioSource musicSource;
         {
           musicSource.loop = false;
         }
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+         
     }
 }
